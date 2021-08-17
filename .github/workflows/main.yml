@@ -16,7 +16,7 @@ on:
       - master
       
 jobs:
-  my_ci_part:
+  build:
       runs-on: ubuntu-latest
       steps:
       - name: Git clone our repo
