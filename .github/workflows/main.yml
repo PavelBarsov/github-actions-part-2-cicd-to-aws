@@ -20,15 +20,15 @@ jobs:
   my_ci_part:
       runs-on: ubuntu-latest
 
-    steps:
+      steps:
       - name: Git clone our repo
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
 
 
 
 # Runs a single command using the runners shell
-      - name: Creat ZIP deployment package
+      - name: Create ZIP deployment package
         run: zip -r ${{ env.DEPLOY_PACKAGE_NAME }} ./ -x *.git*
         
         
